@@ -1,0 +1,38 @@
+.supply, .hand, .in-play {
+  border: 1px solid #CCC;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.supply .supply-card, .hand .card, .in-play .card {
+  float: left;
+  margin-right: 10px;
+}
+
+.in-play {
+  background-color: #BBF;
+}
+
+.supply {
+  background-color: #ffccff;
+}
+
+.panel.disabled {
+  opacity: 0.5;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+h4 {
+  color: red;
+  padding: 0;
+  margin: 0;
+  font-size: 11pt;
+  -webkit-transform: rotateZ(-90deg);
+  -webkit-transform-origin: 0;
+  position: relative;
+  top: 50px;
+}

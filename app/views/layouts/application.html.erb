@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Domjs</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :all, :recursive => true %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<%= yield %>
+
+<% javascript_tag do %>
+  window.domjs = new Domjs();
+  domjs.start();
+<% end %>
+</body>
+</html>

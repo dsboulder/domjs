@@ -1,0 +1,4 @@
+#!/bin/sh
+coffee -c --no-wrap -o public/javascripts/compiled public/javascripts/*.coffee
+coffee -c --no-wrap -o public/javascripts/compiled public/javascripts/**/*.coffee
+

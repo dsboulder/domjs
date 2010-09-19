@@ -1,0 +1,50 @@
+.card {
+  border: 2px solid #666;
+  -webkit-border-radius: 10px;
+  height: 110px;
+  width: 80px;
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+}
+
+body .card.hidden {
+  background-color: brown;
+}
+
+.card.hidden > * {
+  visibility: hidden;
+}
+
+.card.treasure {
+  background-color: yellow;
+}
+
+.card.victory {
+  background-color: #6F6;
+}
+
+.card.disabled {
+  opacity: 0.8;
+  border: 2px dashed #999;
+}
+
+.card h3 {
+  margin: 0;
+  padding: 0;
+}
+
+
+.card .cost {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+.supply-card.left {
+  opacity: 0.4;
+  border: 2px dotted red;
+}
